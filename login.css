@@ -1,4 +1,4 @@
-/* Анимация появления */
+
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -14,12 +14,12 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Применение анимации к основной части */
+
 main {
   animation: fadeIn 0.8s ease-in-out;
 }
 
-/* login.css — стили для страницы Входа / Регистрации */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -48,7 +48,7 @@ header {
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 1px;
-  animation: fadeInDown 0.8s ease;  /* Анимация логотипа */
+  animation: fadeInDown 0.8s ease;  
 }
 
 .nav-menu {
@@ -57,7 +57,7 @@ header {
   gap: 20px;
   padding: 0;
   margin: 0;
-  animation: fadeIn 1s ease;  /* Анимация для меню */
+  animation: fadeIn 1s ease; 
 }
 
 .nav-menu li a {
@@ -114,7 +114,7 @@ header {
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 1s ease;  /* Анимация для формы */
+  animation: fadeInUp 1s ease;  
 }
 
 .auth-section h2 {
@@ -149,7 +149,7 @@ header {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
-  animation: fadeInUp 1s ease;  /* Анимация для кнопки */
+  animation: fadeInUp 1s ease; 
 }
 
 .auth-btn:hover {
@@ -180,7 +180,7 @@ footer {
   color: #ccc;
 }
 
-/* Анимации */
+
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -191,7 +191,7 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
