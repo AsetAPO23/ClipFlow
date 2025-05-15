@@ -1,4 +1,3 @@
-/* index.css — стили для главной страницы ClipFlow с улучшенным дизайном и анимациями */
 
 body {
   margin: 0;
@@ -152,7 +151,7 @@ main {
 
 .news-item:hover .news-content h3,
 .featured-item:hover h3 {
-  color: #039BE5; /* Синий цвет при наведении на заголовки */
+  color: #039BE5; 
 }
 
 .news-content p {
@@ -187,7 +186,7 @@ footer {
   color: #ccc;
 }
 
-/* Стили для секции графика */
+
 .chart-section {
   margin-top: 40px;
   text-align: center;
@@ -211,7 +210,7 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
