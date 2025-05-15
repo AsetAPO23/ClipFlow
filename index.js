@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
 
-  // Установка сохранённой темы
+  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark-theme') {
     body.classList.add('dark-theme');
@@ -27,37 +27,37 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsChart = new Chart(ctx, {
     type: 'line', // Тип графика (линейный)
     data: {
-      labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май'], // Месяцы
+      labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май'], 
       datasets: [{
         label: 'Популярность новостей', 
-        data: [65, 59, 80, 81, 56], // Данные для графика
-        borderColor: '#039BE5', // Цвет линии
-        backgroundColor: 'rgba(3, 155, 229, 0.2)', // Цвет фона линии
-        tension: 0.1, // Сглаживание линии
-        fill: true, // Заполнение области под графиком
+        data: [65, 59, 80, 81, 56], 
+        borderColor: '#039BE5', 
+        backgroundColor: 'rgba(3, 155, 229, 0.2)', 
+        tension: 0.1, 
+        fill: true, 
       }]
     },
     options: {
-      responsive: true, // Адаптивность графика
+      responsive: true, 
       plugins: {
         legend: {
           position: 'top',
         },
         tooltip: {
-          enabled: true, // Включение подсказок
+          enabled: true, 
         },
       },
       scales: {
         x: {
           grid: {
-            color: 'rgba(255, 255, 255, 0.1)', // Цвет сетки по оси X
+            color: 'rgba(255, 255, 255, 0.1)',
           }
         },
         y: {
           grid: {
-            color: 'rgba(255, 255, 255, 0.1)', // Цвет сетки по оси Y
+            color: 'rgba(255, 255, 255, 0.1)', 
           },
-          beginAtZero: true, // Начинать график с нуля
+          beginAtZero: true, 
         }
       }
     }
