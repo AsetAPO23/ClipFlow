@@ -1,0 +1,240 @@
+/* index.css — стили для главной страницы ClipFlow с улучшенным дизайном и анимациями */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(to right, #4FC3F7, #039BE5);
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  animation: fadeIn 1s ease;
+}
+
+.nav-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#theme-toggle,
+.login-btn {
+  padding: 10px 16px;
+  background-color: #ffffff;
+  color: #039BE5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+  opacity: 0.9;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+}
+
+#theme-toggle:hover,
+.login-btn:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-section,
+.featured-section {
+  margin-bottom: 60px;
+}
+
+.news-section h2,
+.featured-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.news-item,
+.featured-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease both;
+  cursor: pointer;
+}
+
+.dark-theme .news-item,
+.dark-theme .featured-item {
+  background: #1e1e1e;
+}
+
+.news-item:hover,
+.featured-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.news-item img,
+.featured-item img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.news-item:hover img,
+.featured-item:hover img {
+  transform: scale(1.05);
+}
+
+.news-content h3,
+.featured-item h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+  transition: color 0.3s;
+}
+
+.news-item:hover .news-content h3,
+.featured-item:hover h3 {
+  color: #039BE5; /* Синий цвет при наведении на заголовки */
+}
+
+.news-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.dark-theme .news-content p,
+.dark-theme .featured-item p {
+  color: #ccc;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  animation: fadeInUp 0.8s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.dark-theme footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+/* Стили для секции графика */
+.chart-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#newsChart {
+  width: 100%;
+  height: 400px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-item img,
+  .featured-item img {
+    width: 100%;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-buttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+

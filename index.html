@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClipFlow – Главные новости</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="index.js" defer></script>
+</head>
+<body class="light-theme">
+  <header>
+    <div class="logo">ClipFlow</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="gallery.html">Мир звёзд</a></li>
+        <li><a href="media.html">Медиа</a></li>
+        <li><a href="form.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button id="theme-toggle">Сменить тему</button>
+      <a href="login.html" class="login-btn">Вход/Регистрация</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="news-section">
+      <h2>Последние новости</h2>
+      <article class="news-item">
+        <img src="images/news1.jpg" alt="Новость 1" loading="lazy" />
+        <div class="news-content">
+          <h3>Казахстан запускает прямые рейсы в новую страну</h3>
+          <p>С 1 июня Казахстан начнет прямые авиарейсы в Исландию, расширяя географию полетов и укрепляя международные связи.</p>
+        </div>
+      </article>
+      <article class="news-item">
+        <img src="images/news2.jpg" alt="Новость 2" loading="lazy" />
+        <div class="news-content">
+          <h3>Рождаемость в Казахстане достигла минимума за десятилетие</h3>
+          <p>По данным статистики, уровень рождаемости в стране снизился до рекордно низкого уровня, что вызывает обеспокоенность среди демографов.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="featured-section">
+      <h2>Популярное</h2>
+      <div class="featured-grid">
+        <div class="featured-item">
+          <img src="images/feature1.jpg" alt="Популярное 1" loading="lazy" />
+          <h3>«Беднейший президент» Хосе Мухика скончался</h3>
+        </div>
+        <div class="featured-item">
+          <img src="images/feature2.jpg" alt="Популярное 2" loading="lazy" />
+          <h3>Apple выплатит пользователям компенсации за слежку через Siri</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Добавление графика -->
+    <section class="chart-section">
+      <h2>График популярности новостей</h2>
+      <canvas id="newsChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ClipFlow. Все права защищены.</p>
+  </footer>
+</body>
+</html>

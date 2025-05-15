@@ -1,0 +1,211 @@
+/* Анимация появления */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Применение анимации к основной части */
+main {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* login.css — стили для страницы Входа / Регистрации */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(to right, #4FC3F7, #039BE5);
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: fadeInDown 0.8s ease;  /* Анимация логотипа */
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  animation: fadeIn 1s ease;  /* Анимация для меню */
+}
+
+.nav-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#theme-toggle {
+  padding: 10px 16px;
+  background-color: #ffffff;
+  color: #039BE5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+  opacity: 0.9;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#theme-toggle:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.auth-section {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;  /* Анимация для формы */
+}
+
+.auth-section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-form label {
+  font-size: 1em;
+}
+
+.auth-form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-btn {
+  padding: 10px 16px;
+  background-color: #039BE5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  animation: fadeInUp 1s ease;  /* Анимация для кнопки */
+}
+
+.auth-btn:hover {
+  background-color: #0288d1;
+  transform: scale(1.05);
+}
+
+.auth-section p {
+  text-align: center;
+  font-size: 1em;
+}
+
+.auth-section p a {
+  color: #039BE5;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.dark-theme footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .auth-section {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .header-buttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

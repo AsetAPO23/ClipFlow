@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>О ClipFlow</title>
+  <link rel="stylesheet" href="about.css" id="theme-style">
+</head>
+<body>
+  <header>
+    <div class="logo">ClipFlow</div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html" class="active">О нас</a></li>
+      <li><a href="gallery.html">Мир звёзд</a></li>
+      <li><a href="media.html">Медиа</a></li>
+      <li><a href="form.html">Контакты</a></li>
+    </ul>
+    <div class="header-buttons">
+      <button id="theme-toggle">Сменить тему</button>
+      <!-- Изменено с # на login.html -->
+      <a href="login.html" class="login-btn">Вход/Регистрация</a>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-title">О платформе ClipFlow</h2>
+    <p class="animated fadeInUp">ClipFlow — это инновационная видеоплатформа, где пользователи могут смотреть, загружать и делиться контентом. Мы предлагаем качественный интерфейс, аналитику и инструменты продвижения.</p>
+
+    <h2 class="section-title">Особенности</h2>
+    <ul class="features-list">
+      <li>Новости и обновления</li>
+      <li>Загрузка видео</li>
+      <li>Аудио поддержка</li>
+      <li>Комментарии и лайки</li>
+      <li>Уведомления</li>
+    </ul>
+
+    <h2 class="section-title">Команда и статистика</h2>
+    <table class="team-table">
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Роль</th>
+          <th>Опыт (лет)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Анна</td>
+          <td>UI/UX дизайнер</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Иван</td>
+          <td>Разработчик</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Мария</td>
+          <td>Контент-менеджер</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title">Подробнее</h2>
+    <button class="info-btn" onclick="toggleInfo()">Подробнее</button>
+    <div id="hiddenInfo" class="hidden-info">
+      <p>Мы стремимся создать лучшую среду для творчества и общения, используя современные веб-технологии и заботясь о вашем удобстве.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 ClipFlow. Все права защищены.
+  </footer>
+
+  <script src="about.js"></script>
+</body>
+</html>

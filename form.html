@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — ClipFlow</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body class="light-theme">
+  <header>
+    <div class="logo">ClipFlow</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="gallery.html">Мир звёзд</a></li>
+        <li><a href="media.html">Медиа</a></li>
+        <li><a href="form.html" class="active">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button id="theme-toggle">Сменить тему</button>
+      <a href="login.html" class="login-btn">Вход/Регистрация</a>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-title">Связаться с нами</h2>
+
+    <section class="hotline">
+      <h3>Горячая линия сайта</h3>
+      <p>Телефон: <a href="tel:+77771234567">+7 (777) 123-45-67</a></p>
+      <p>Email: <a href="mailto:yourhotline@gmail.com">yourhotline@gmail.com</a></p>
+      <p>Город: Петропавловск</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" placeholder="Ваше имя" required />
+        <input type="email" id="email" placeholder="Ваш email" required />
+        <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <p id="success-message" class="success-message">Сообщение успешно отправлено!</p>
+      <p id="error-message" class="error-message">Пожалуйста, заполните все поля.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 ClipFlow. Все права защищены.
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>
+
+
+
+

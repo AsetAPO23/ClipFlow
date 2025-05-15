@@ -1,0 +1,104 @@
+@import url('index.css'); /* Наследуем общий стиль */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  animation: fadeInUp 1s ease;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 40px;
+  animation: fadeInDown 1s ease;
+}
+
+.interaction-panel {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease;
+}
+
+.like-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #4FC3F7;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.like-btn:hover {
+  transform: scale(1.05);
+  background-color: #039BE5;
+}
+
+.comments {
+  margin-top: 30px;
+}
+
+.comments h3 {
+  margin-bottom: 10px;
+}
+
+#comment-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#comment-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#comment-form button {
+  background-color: #4FC3F7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#comment-form button:hover {
+  background-color: #039BE5;
+}
+
+#comment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#comment-list li {
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.dark-theme #comment-list li {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+
+
+

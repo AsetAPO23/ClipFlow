@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media — ClipFlow</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">ClipFlow</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="gallery.html">Мир звёзд</a></li>
+        <li><a href="media.html" class="active">Медиа</a></li>
+        <li><a href="form.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button id="theme-toggle">Сменить тему</button>
+      <a href="login.html" class="login-btn">Вход / Регистрация</a>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-title">Видео дня</h2>
+    <div class="video-container animated">
+      <video controls>
+        <source src="video/video.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+      </video>
+    </div>
+
+    <div class="interaction-panel">
+      <button class="like-btn">👍 Лайк <span id="like-count">0</span></button>
+      <div class="comments">
+        <h3>Комментарии</h3>
+        <form id="comment-form">
+          <input type="text" id="comment-input" placeholder="Оставьте комментарий..." />
+          <button type="submit">Отправить</button>
+        </form>
+        <ul id="comment-list"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 ClipFlow. Все права защищены.
+  </footer>
+
+  <script src="media.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
