@@ -1,4 +1,4 @@
-// Переключение темы
+
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Подробнее
+ 
   document.querySelectorAll('.details-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const detail = btn.nextElementSibling;
