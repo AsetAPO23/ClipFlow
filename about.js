@@ -1,9 +1,9 @@
-// Переключение темы
+
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('theme-toggle');
   const body = document.body;
 
-  // Применить сохранённую тему
+ 
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-theme');
     toggleBtn.textContent = 'Сменить тему';
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// DHTML: Показать/скрыть блок "Подробнее"
+
 function toggleInfo() {
   const info = document.getElementById('hiddenInfo');
   info.style.display = info.style.display === 'block' ? 'none' : 'block';
