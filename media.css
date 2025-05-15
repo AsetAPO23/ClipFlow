@@ -1,4 +1,4 @@
-@import url('index.css'); /* Наследуем общий стиль */
+@import url('index.css'); 
 
 .video-container {
   display: flex;
