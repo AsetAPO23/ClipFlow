@@ -1,4 +1,3 @@
-// let isLoggedIn = false; // Убираем, не нужна проверка
 
 document.addEventListener('DOMContentLoaded', () => {
   const likeBtn = document.querySelector('.like-btn');
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
 
-  // Тема по умолчанию
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark-theme') {
     body.classList.add('dark-theme');
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.add('light-theme');
   }
 
-  // Переключение темы
   themeToggle.addEventListener('click', () => {
     if (body.classList.contains('light-theme')) {
       body.classList.remove('light-theme');
@@ -29,12 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Лайк без проверки
+ 
   likeBtn.addEventListener('click', () => {
     likeCount.textContent = parseInt(likeCount.textContent) + 1;
   });
 
-  // Комментарии без проверки
+ 
   commentForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
